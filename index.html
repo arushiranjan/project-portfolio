@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Portfolio</title>
+
+       
+        <link rel="stylesheet" href="css/swiper-bundle.min.css"/>    <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="css/style.css"/> <!-- Custom CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    </head>
+
+    <body>
+
+            <!-- Scroll to Top Button -->
+        <button id="scrollTop" onclick="scrollToTop()">⬆</button>
+
+        <!-- Scroll to Bottom Button -->
+        <button id="scrollBottom" onclick="scrollToBottom()">⬇</button>
+
+
+            <!-- Hamburger Menu -->
+            <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+
+        
+        <!-- Sidebar Navigation -->
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#about" onclick="toggleSidebar()">About Me</a></li>
+                <li><a href="#education" onclick="toggleSidebar()">Education</a></li>
+                <li><a href="#projects" onclick="toggleSidebar()">Projects</a></li>
+                <li><a href="#experience" onclick="toggleSidebar()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleSidebar()">Skills</a></li>
+                <li><a href="#achievements" onclick="toggleSidebar()">Achievements</a></li>
+                <li><a href="#contact" onclick="toggleSidebar()">Contact</a></li>
+            </ul>
+        </div>
+ 
+
+        <section class="main">
+            <!-- Swiper container -->
+            <div class="swiper mySwiper">
+                <!-- Wrapper for slides (ONLY ONE .swiper-wrapper) -->
+                <div class="swiper-wrapper">
+                    
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="images/cover1.png" alt="My profile picture" class="image">
+                        <div class="image-data">
+                            <span class="text">Arushi Ranjan</span>
+                            <h2>Artificial Intelligence Student</h2>
+                            <a href="#about" class="button">About Me</a>
+                        </div>
+                    </div>
+        
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="images/cover2.png" alt="A robot" class="image">
+                        <div class="image-data">
+                            <h1>Explore my journey!</h1>
+                            <p>Passionate about technology, I am on a continuous learning path in AI, Web Development, and Data Science. 
+                                Explore my education, projects, and experiences that define my journey!</p>
+                            <div class="options">
+                                <a href="#education" class="option-button">Education</a>
+                                <a href="#projects" class="option-button">Projects</a>
+                                <a href="#experience" class="option-button">Experience</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="images/cover3.jpg" alt="Codes written on laptop" class="image">
+                        <div class="image-data">
+                            <h1>My Skills & Achievements</h1>
+                            <p>Passionate about AI, Web Development, and Data Science, I have gained hands-on experience through projects, competitions, and continuous learning. From building machine learning models to analyzing complex datasets, my journey has been driven by innovation and problem-solving. Explore more about my skills and achievements below. 
+                                Here are some key highlights of my journey.</p>
+                            <div class="options">
+                                <a href="#skills" class="option-button">Skills</a>
+                                <a href="#achievements" class="option-button">Achievements</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+        
+                </div>
+        
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                
+                <!-- About Content -->
+                <div class="about-content">
+                    <h2>Hi, I am Arushi</h2>
+                    <p>
+                        I am a second-year BTech student in Computer Science (Artificial Intelligence and Machine Learning) at Vellore Institute, Chennai. 
+                        I am passionate about technology, constantly exploring new innovations, and eager to enhance my skills in AI and coding.  
+                        <br><br>
+                        Alongside my technical pursuits, I have a deep passion for creativity through drawing and painting. This blend of logic and art 
+                        fuels my problem-solving approach, helping me create impactful solutions. 
+                    </p>
+                    <br>
+                    <a href="files/Arushi Ranjan_Resume.pdf" download="Arushi Ranjan_Resume.pdf" class="download-btn">Download Resume</a>
+
+                </div>
+
+                <!-- Collage Section -->
+                <div class="collage">
+                    <div class="collage-item"><img src="images/profile_img.jpg" alt="My Picture"></div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- Education Section -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education-box">
+                    <div class="education-content">
+                        <h3>B.Tech in Computer Science (AI & ML)</h3>
+                        <p>Vellore Institute of Technology, Chennai (2023 - 2027)</p>
+                        <span class="year">CGPA- 9.11</span>
+                    </div>
+                </div>
+        
+                <div class="education-box">
+                    <div class="education-content">
+                        <h3>Higher Secondary Education (Class 12)</h3>
+                        <p>St. Arnold's School, Indore</p>
+                        <span class="year">90.4%</span>
+                    </div>
+                </div>
+        
+                <div class="education-box">
+                    <div class="education-content">
+                        <h3>Secondary Education (Class 10)</h3>
+                        <p>St. Aloysius School, Jabalpur</p>
+                        <span class="year">95%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div>
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="images/spectoV.jpg" alt="AI Intern">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>AI Intern</h3>
+                            <p><strong>SpectoV</strong> | Feb 2025 - Present</p>
+                            <ul>
+                                <li>Developing AI automation tools to streamline the recruitment process.</li>
+                                <li>Using Selenium for LinkedIn job application scraping.</li>
+                                <li>Integrating Google Drive API for resume storage and Google Sheets API for data organization.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <img src="images/aic.jpg" href="https://www.linkedin.com/company/spectovx/posts/?feedView=all" alt="Design Member">
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Content and Design Member</h3>
+                            <p><strong>Artificial Intelligence Club, VIT Chennai</strong> | March 2024 - Present</p>
+                            <ul>
+                                <li>Designed posters, animations, and promotional content for various technical events, workshops, and hackathons.</li>
+                                <li>Created a comprehensive brochure for an inter-level hackathon, focusing on aesthetics and clear information dissemination.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2>My Projects</h2>
+
+            <ol>
+                <li>
+                    <h3>AYUSHI Chatbot - Medicinal Plant Information & AI Assistance</h3>
+                    <p>AYUSHI is a Streamlit-based chatbot that provides information about medicinal plants 
+                        and answers general queries using Google Gemini AI. It integrates with SheetDB API to 
+                        fetch plant details (such as scientific names and medicinal uses) and uses natural language
+                         processing to handle other queries. The chatbot supports chat history tracking and allows 
+                         users to switch between live chat and past conversations.</p>
+        
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Fetches medicinal plant data from a Google Sheets database</li>
+                        <li>Provides plant details based on user queries</li>
+                        <li>Utilizes Gemini AI for general conversations</li>
+                        <li>Supports chat history tracking</li>
+                    </ul>
+                </li>
+            </ol>
+            
+
+
+            <div class="slideshow">
+                <button class="nav-btn prev" id="previousBtn">&lt;</button>
+                <img id="image" src="project_images/chatbot1.png" alt="Project Image">
+                <button class="nav-btn next" id="nextBtn">&gt;</button>
+            </div>
+        </section>
+    
+        
+        
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <center>
+                <h2>SKILLS</h2>
+            </center>
+            <div class="horizontal-scroll">
+                <div class="skill"><img src="images/python.png" alt="Python"></div>
+                <div class="skill"><img src="images/html.png" alt="HTML"></div>
+                <div class="skill"><img src="images/css.png" alt="CSS"></div>
+                <div class="skill"><img src="images/matplotlib.png" alt="Matplotlib"></div>
+                <div class="skill"><img src="images/sql.png" alt="SQL"></div>
+                <div class="skill"><img src="images/tensorflow.png" alt="TensorFlow"></div>
+            </div>
+        </section>
+        
+        <!-- Achievements Section -->
+        <section class="achievements" id="achievements">
+            <h2>My Achievements</h2>
+            <div class="achievements-container">
+                <div class="achievement">
+                    <div class="achievement-info">
+                        <h3>🏆Top 50 Finalist in VITISH 2024</h3>
+                        <p>Selected among 200+ teams for innovative project submission.</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="achievement-info">
+                        <h3>📜 Research Experience</h3>
+                        <p>Contributed to the research paper "TestPod | Automated Evaluation of Essay-Based Questions Using NLP & AI." The paper explores AI-driven grading for subjective answers, ensuring fair evaluation while enhancing data security through IDAM & encryption.
+                        </p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="achievement-info">
+                        <h3>🎓 Recipient of the Ministry of Culture Scholarship</h3>
+                        <p>Issued by Centre for Cultural Resources and Training (CCRT). Recognized for excellence in Visual Arts at the national level. (2014 - Present)
+                        </p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <div class="achievement-info">
+                        <h3>🌟 DataQuest 2.0 Finalist</h3>
+                        <p>Ranked among the top 10% in DataQuest 2.0.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <footer class="footer-container" id="contact">
+            <!-- Left Section: Contact Info -->
+            <div class="contact-section">
+                <div class="contact-content">
+                    <h2>Let's Connect</h2>
+                    <div class="contact-details">
+                        <br>
+                        <p>
+                            <img src="images/gmail.png" class="icon">
+                            <a href="mailto:arushi.ranjan26@gmail.com">arushi.ranjan26@gmail.com</a>
+                        </p>
+                        <br>
+                        <p>
+                            <img src="images/linkedin.png" class="icon">
+                            <a href="https://www.linkedin.com/in/arushi-ranjan-890918288/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </p>
+                        <br>
+                        <p>
+                            <img src="images/github.png" class="icon">
+                            <a href="https://github.com/arushiranjan" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </p>
+                        <br>
+                        <p>
+                            <img src="images/twitter.png" class="icon">
+                            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Right Section: Contact Form -->
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contact-form" onsubmit="sendMail(event)">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            
+        </footer>
+
+        <div class="copyright">
+            <p style="font-size:medium;">&copy; 2025 Arushi Ranjan. All Rights Reserved.</p>
+            <p style="font-size: smaller;">Made with ❤️ by Arushi Ranjan</p>
+        </div>
+
+        
+        <script>
+            (function(){
+                emailjs.init("VrmQh-I5UhUcp8ozp"); 
+            })();
+        </script>
+
+        <script src="js/script.js"></script>
+        <!-- Swiper JS -->
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/scrolling.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: false, // Ensures smooth looping
+               
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+        </script>
+    </body>
+</html>
